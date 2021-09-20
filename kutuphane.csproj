@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FD83101-D0D2-4D52-92FE-9145A76CCA6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kutuphane</RootNamespace>
+    <AssemblyName>kutuphane</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>kutuphane.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Desktop\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="almaverme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="almaverme.Designer.cs">
+      <DependentUpon>almaverme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa.Designer.cs">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arama.Designer.cs">
+      <DependentUpon>arama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getirilmeyenkitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="getirilmeyenkitaplar.Designer.cs">
+      <DependentUpon>getirilmeyenkitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hakkinda1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hakkinda1.Designer.cs">
+      <DependentUpon>hakkinda1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitduzenle.Designer.cs">
+      <DependentUpon>kayitduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitguncelle.Designer.cs">
+      <DependentUpon>kayitguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapal.Designer.cs">
+      <DependentUpon>kitapal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapalsekme2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapalsekme2.Designer.cs">
+      <DependentUpon>kitapalsekme2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapkayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapkayit.Designer.cs">
+      <DependentUpon>kitapkayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitaplistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitaplistesi.Designer.cs">
+      <DependentUpon>kitaplistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapver.Designer.cs">
+      <DependentUpon>kitapver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapver2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapver2.Designer.cs">
+      <DependentUpon>kitapver2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ograrama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ograrama.Designer.cs">
+      <DependentUpon>ograrama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencilistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrencilistesi.Designer.cs">
+      <DependentUpon>ogrencilistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrkayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrkayit.Designer.cs">
+      <DependentUpon>ogrkayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrkayitduzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrkayitduzenleme.Designer.cs">
+      <DependentUpon>ogrkayitduzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrkayitguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrkayitguncelle.Designer.cs">
+      <DependentUpon>ogrkayitguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrlistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrlistesi.Designer.cs">
+      <DependentUpon>ogrlistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tabanDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tabanDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tabanDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tabanDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="yardim2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yardim2.Designer.cs">
+      <DependentUpon>yardim2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yardim3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yardim3.Designer.cs">
+      <DependentUpon>yardim3.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="almaverme.resx">
+      <DependentUpon>almaverme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anasayfa.resx">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arama.resx">
+      <DependentUpon>arama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getirilmeyenkitaplar.resx">
+      <DependentUpon>getirilmeyenkitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hakkinda1.resx">
+      <DependentUpon>hakkinda1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitduzenle.resx">
+      <DependentUpon>kayitduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitguncelle.resx">
+      <DependentUpon>kayitguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapal.resx">
+      <DependentUpon>kitapal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapalsekme2.resx">
+      <DependentUpon>kitapalsekme2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapkayit.resx">
+      <DependentUpon>kitapkayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitaplistesi.resx">
+      <DependentUpon>kitaplistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapver.resx">
+      <DependentUpon>kitapver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapver2.resx">
+      <DependentUpon>kitapver2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ograrama.resx">
+      <DependentUpon>ograrama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrencilistesi.resx">
+      <DependentUpon>ogrencilistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrkayit.resx">
+      <DependentUpon>ogrkayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrkayitduzenleme.resx">
+      <DependentUpon>ogrkayitduzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrkayitguncelle.resx">
+      <DependentUpon>ogrkayitguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrlistesi.resx">
+      <DependentUpon>ogrlistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="yardim2.resx">
+      <DependentUpon>yardim2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yardim3.resx">
+      <DependentUpon>yardim3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tabanDataSet1.xsc">
+      <DependentUpon>tabanDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tabanDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tabanDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tabanDataSet1.xss">
+      <DependentUpon>tabanDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tabanDataSet14.xsc">
+      <DependentUpon>tabanDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="tabanDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tabanDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tabanDataSet14.xss">
+      <DependentUpon>tabanDataSet14.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="taban.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
